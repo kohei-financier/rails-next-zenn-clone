@@ -6,8 +6,8 @@ WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 
-RUN gem update --system
-RUN bundle update --bundler
+RUN gem install bundler -v 2.6.9
+RUN bundle lock --add-platform x86_64-linux
 
 RUN bundle install
 COPY . /myapp
