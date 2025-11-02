@@ -85,6 +85,12 @@ ja:
       day: 日
       month: 月
       year: 年
+  enums:
+    article:
+      status:
+        unsaved: 未保存
+        draft: 下書き
+        published: 公開中
   errors:
     format: "%{attribute}%{message}"
     messages:
