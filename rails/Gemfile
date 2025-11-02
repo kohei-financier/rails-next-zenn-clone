@@ -50,6 +50,7 @@ group :development, :test do
   gem "rubocop-rspec"
   gem "letter_opener_web"
   gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
